@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f1ed;
+  --foreground: #4B3621;
+  --primary: #8B5E3C;
+  --secondary: #A68966;
+  --accent: #8B5E3C;
+  --muted: #D2B48C;
+  --muted-foreground: #8B5E3C;
+  --border: #A68966;
+}
+
+.dark {
+  --background: #4B3621;
+  --foreground: #D2B48C;
+  --primary: #8B5E3C;
+  --secondary: #A68966;
+  --accent: #8B5E3C;
+  --muted: #8B5E3C;
+  --muted-foreground: #D2B48C;
+  --border: #A68966;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), "Segoe UI", sans-serif;
 }
