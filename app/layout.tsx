@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EventHub | Discover and Book Events",
+  title: "Infinite Planners | Discover and Book Events",
   description: "Browse featured events, see details, and start booking in seconds.",
 };
 

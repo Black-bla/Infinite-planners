@@ -49,7 +49,9 @@ export function Header() {
             href="/"
             className="absolute left-1/2 -translate-x-1/2 text-lg font-bold tracking-tight text-white text-2xl"
           >
-            EventHub
+            <span style={{ fontFamily: '"Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive' }}>
+              In<span style={{ color: '#8B5E3C' }}>f</span>inite
+            </span>
           </Link>
 
           {/* Right Navigation Items & Actions */}
